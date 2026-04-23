@@ -1,0 +1,356 @@
+.css-skill-sync {
+  padding: 8px 10px;
+}
+.css-skill-sync .css-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 4px;
+}
+.css-skill-sync .css-header h3 {
+  margin: 0;
+  font-size: 14px;
+}
+.css-skill-sync .css-btn-row {
+  display: flex;
+  gap: 6px;
+  margin-bottom: 8px;
+}
+.css-skill-sync .css-btn-row button {
+  flex: 1;
+  font-size: 12px;
+}
+.css-skill-sync .css-meta {
+  font-size: 11px;
+  color: var(--text-muted);
+  margin-bottom: 10px;
+  word-break: break-all;
+}
+.css-skill-sync .css-status-card {
+  border: 1px solid var(--background-modifier-border);
+  border-radius: 6px;
+  padding: 8px;
+  margin-bottom: 10px;
+  background: var(--background-secondary);
+}
+.css-skill-sync .css-status-loading {
+  font-size: 11px;
+  color: var(--text-muted);
+  text-align: center;
+  padding: 4px;
+}
+.css-skill-sync .css-status-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 6px;
+  font-size: 12px;
+}
+.css-skill-sync .css-status-title { font-weight: 600; }
+.css-skill-sync .css-status-overall {
+  font-size: 10px;
+  padding: 2px 6px;
+  border-radius: 3px;
+}
+.css-skill-sync .css-status-overall.all-good {
+  background: rgba(16, 185, 129, 0.15);
+  color: #10b981;
+}
+.css-skill-sync .css-status-overall.has-issue {
+  background: rgba(234, 179, 8, 0.15);
+  color: #eab308;
+}
+.css-skill-sync .css-status-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4px;
+}
+.css-skill-sync .css-status-cell {
+  border: 1px solid var(--background-modifier-border);
+  border-radius: 4px;
+  padding: 6px 8px;
+  text-align: center;
+}
+.css-skill-sync .css-status-cell.css-clickable {
+  cursor: pointer;
+  transition: background 0.1s;
+}
+.css-skill-sync .css-status-cell.css-clickable:hover {
+  background: var(--background-modifier-hover);
+}
+.css-skill-sync .css-status-num {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.2;
+}
+.css-skill-sync .css-status-label {
+  font-size: 10px;
+  color: var(--text-muted);
+  margin-top: 2px;
+}
+.css-skill-sync .css-status-cell.css-good .css-status-num { color: #10b981; }
+.css-skill-sync .css-status-cell.css-warn .css-status-num { color: #eab308; }
+.css-skill-sync .css-status-cell.css-bad .css-status-num { color: #ef4444; }
+.css-skill-sync .css-status-cell.css-info .css-status-num { color: var(--text-normal); }
+.css-skill-sync .css-status-cell.css-mute .css-status-num { color: var(--text-muted); }
+.css-skill-sync .css-empty {
+  font-size: 12px;
+  color: var(--text-muted);
+  padding: 12px;
+  border: 1px dashed var(--background-modifier-border);
+  border-radius: 6px;
+}
+.css-skill-sync .css-search-wrap {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 8px;
+}
+.css-skill-sync .css-search-input {
+  flex: 1;
+  font-size: 12px;
+  padding: 4px 8px;
+  border: 1px solid var(--background-modifier-border);
+  border-radius: 4px;
+  background: var(--background-primary);
+}
+.css-skill-sync .css-search-count {
+  font-size: 10px;
+  color: var(--text-muted);
+  white-space: nowrap;
+  min-width: 30px;
+  text-align: right;
+}
+.css-skill-sync .css-skill-list {
+  display: flex;
+  flex-direction: column;
+}
+.css-skill-sync .css-skill {
+  border: 1px solid var(--background-modifier-border);
+  border-radius: 6px;
+  padding: 8px 10px;
+  margin-bottom: 6px;
+  background: var(--background-secondary);
+}
+.css-skill-sync .css-name-row {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  user-select: none;
+}
+.css-skill-sync .css-toggle {
+  font-size: 10px;
+  color: var(--text-muted);
+  width: 12px;
+  display: inline-block;
+  text-align: center;
+}
+.css-skill-sync .css-name {
+  font-weight: 600;
+  font-size: 13px;
+}
+.css-skill-sync .css-desc {
+  font-size: 11px;
+  color: var(--text-muted);
+  margin: 6px 0 4px 16px;
+  line-height: 1.4;
+  padding-left: 6px;
+  border-left: 2px solid var(--background-modifier-border);
+}
+.css-skill-sync .css-row {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 4px;
+  font-size: 11px;
+}
+.css-skill-sync .css-plat {
+  flex: 1;
+  color: var(--text-muted);
+}
+.css-skill-sync .css-badge {
+  padding: 1px 6px;
+  border-radius: 3px;
+  font-size: 10px;
+  font-weight: 500;
+}
+.css-skill-sync .css-linked { background: rgba(16, 185, 129, 0.15); color: #10b981; }
+.css-skill-sync .css-missing { background: rgba(255, 255, 255, 0.06); color: var(--text-muted); }
+.css-skill-sync .css-conflict { background: rgba(239, 68, 68, 0.15); color: #ef4444; }
+.css-skill-sync .css-mislinked { background: rgba(234, 179, 8, 0.15); color: #eab308; }
+.css-skill-sync .css-warn {
+  font-size: 10px;
+  color: var(--text-warning, #eab308);
+  margin-left: 4px;
+}
+.css-skill-sync .css-row button {
+  font-size: 10px;
+  padding: 2px 8px;
+  height: auto;
+}
+.css-platform-edit {
+  border-left: 2px solid var(--background-modifier-border);
+  padding-left: 8px;
+  margin-bottom: 4px;
+}
+.css-skill-sync-modal .css-import-hint {
+  font-size: 12px;
+  color: var(--text-muted);
+  margin: 4px 0 12px;
+  line-height: 1.5;
+}
+.css-skill-sync-modal .css-import-ctrl {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+  margin-bottom: 8px;
+}
+.css-skill-sync-modal .css-import-count {
+  margin-left: auto;
+  font-size: 11px;
+  color: var(--text-muted);
+}
+.css-skill-sync-modal .css-import-list {
+  max-height: 50vh;
+  overflow-y: auto;
+  border: 1px solid var(--background-modifier-border);
+  border-radius: 6px;
+  padding: 4px;
+}
+.css-skill-sync-modal .css-import-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  padding: 6px 8px;
+  border-radius: 4px;
+}
+.css-skill-sync-modal .css-import-row:hover {
+  background: var(--background-modifier-hover);
+}
+.css-skill-sync-modal .css-import-row label {
+  flex: 1;
+  cursor: pointer;
+  font-size: 12px;
+}
+.css-skill-sync-modal .css-del-btn {
+  font-size: 11px;
+  padding: 2px 8px;
+  background: transparent;
+  border: 1px solid var(--background-modifier-border);
+  color: var(--text-muted);
+  border-radius: 3px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+.css-skill-sync-modal .css-del-btn:hover {
+  border-color: #ef4444;
+  color: #ef4444;
+}
+.css-skill-sync-modal .css-del-btn.mod-warning {
+  background: #ef4444;
+  border-color: #ef4444;
+  color: #fff;
+}
+.css-skill-sync-modal .css-source {
+  color: var(--text-muted);
+  font-size: 11px;
+}
+.css-skill-sync-modal .css-source-path {
+  font-size: 10px;
+  color: var(--text-faint);
+  word-break: break-all;
+  margin-top: 2px;
+}
+.css-skill-sync-modal .css-empty {
+  color: var(--text-muted);
+  padding: 16px;
+  text-align: center;
+}
+.css-skill-sync-modal .css-custom-row {
+  display: flex;
+  gap: 6px;
+  margin-bottom: 10px;
+}
+.css-skill-sync-modal .css-custom-row input {
+  flex: 1;
+  font-size: 12px;
+  padding: 4px 8px;
+  border: 1px solid var(--background-modifier-border);
+  border-radius: 4px;
+  background: var(--background-primary);
+}
+.css-skill-sync-modal .css-import-row input[type="checkbox"]:disabled + label {
+  opacity: 0.5;
+}
+
+/* —— 添加平台 modal —— */
+.css-add-platform-modal .css-search-wrap {
+  margin-bottom: 8px;
+}
+.css-add-platform-modal .css-preset-list {
+  max-height: 320px;
+  overflow-y: auto;
+  border: 1px solid var(--background-modifier-border);
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+.css-add-platform-modal .css-preset-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 4px 8px;
+  font-size: 12px;
+  border-bottom: 1px solid var(--background-modifier-border);
+}
+.css-add-platform-modal .css-preset-row:last-child {
+  border-bottom: none;
+}
+.css-add-platform-modal .css-preset-row:hover {
+  background: var(--background-modifier-hover);
+}
+.css-add-platform-modal .css-preset-row label {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  margin: 0;
+}
+.css-add-platform-modal .css-preset-name {
+  font-weight: 500;
+  min-width: 110px;
+}
+.css-add-platform-modal .css-preset-path {
+  color: var(--text-muted);
+  font-size: 11px;
+  font-family: var(--font-monospace);
+  flex: 1;
+}
+.css-add-platform-modal .css-preset-tag {
+  font-size: 10px;
+  color: var(--text-muted);
+  padding: 1px 6px;
+  background: var(--background-modifier-border);
+  border-radius: 3px;
+}
+.css-add-platform-modal .css-preset-exists {
+  opacity: 0.5;
+}
+.css-add-platform-modal .css-custom-toggle {
+  font-size: 12px;
+  background: transparent;
+  border: 1px dashed var(--background-modifier-border);
+  color: var(--text-muted);
+  padding: 4px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom: 8px;
+}
+.css-add-platform-modal .css-custom-toggle:hover {
+  background: var(--background-modifier-hover);
+  color: var(--text-normal);
+}
+.css-add-platform-modal .css-custom-wrap {
+  margin-bottom: 10px;
+}

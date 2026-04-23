@@ -1,0 +1,13 @@
+# 用户本地设置（含本机 home 路径，不应入库）
+data.json
+
+# macOS
+.DS_Store
+
+# Editor
+.vscode/
+.idea/
+
+# Node（如果以后改成 TS 编译）
+node_modules/
+*.log
